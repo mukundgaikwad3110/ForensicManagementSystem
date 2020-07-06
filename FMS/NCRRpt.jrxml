@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="NCRRpt" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="587e8a21-ace1-4ea3-a22f-e8db22230403">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (8)"/>
+	<queryString language="SQL">
+		<![CDATA[select * from ncr]]>
+	</queryString>
+	<field name="emp_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="emp_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ncr"/>
+	</field>
+	<field name="ncr_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="ncr_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ncr"/>
+	</field>
+	<field name="date" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.label" value="date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ncr"/>
+	</field>
+	<field name="ncrno" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="ncrno"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ncr"/>
+	</field>
+	<field name="policestation" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="policestation"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ncr"/>
+	</field>
+	<field name="acts" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="acts"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ncr"/>
+	</field>
+	<field name="section" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="section"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ncr"/>
+	</field>
+	<field name="date1" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.label" value="date1"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ncr"/>
+	</field>
+	<field name="time" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="time"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ncr"/>
+	</field>
+	<field name="nameofcomplainant" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="nameofcomplainant"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ncr"/>
+	</field>
+	<field name="nameofwitness" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="nameofwitness"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ncr"/>
+	</field>
+	<field name="complaint" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="complaint"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ncr"/>
+	</field>
+	<group name="emp_id">
+		<groupExpression><![CDATA[$F{emp_id}]]></groupExpression>
+	</group>
+	<group name="ncr_id">
+		<groupExpression><![CDATA[$F{ncr_id}]]></groupExpression>
+	</group>
+	<group name="date">
+		<groupExpression><![CDATA[$F{date}]]></groupExpression>
+	</group>
+	<group name="ncrno">
+		<groupExpression><![CDATA[$F{ncrno}]]></groupExpression>
+	</group>
+	<group name="policestation">
+		<groupExpression><![CDATA[$F{policestation}]]></groupExpression>
+	</group>
+	<group name="acts">
+		<groupExpression><![CDATA[$F{acts}]]></groupExpression>
+	</group>
+	<group name="section">
+		<groupExpression><![CDATA[$F{section}]]></groupExpression>
+	</group>
+	<group name="date1">
+		<groupExpression><![CDATA[$F{date1}]]></groupExpression>
+	</group>
+	<group name="time">
+		<groupExpression><![CDATA[$F{time}]]></groupExpression>
+	</group>
+	<group name="nameofcomplainant">
+		<groupExpression><![CDATA[$F{nameofcomplainant}]]></groupExpression>
+	</group>
+	<group name="nameofwitness">
+		<groupExpression><![CDATA[$F{nameofwitness}]]></groupExpression>
+	</group>
+	<group name="complaint">
+		<groupExpression><![CDATA[$F{complaint}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="90" splitType="Stretch">
+			<staticText>
+				<reportElement x="227" y="30" width="142" height="30" uuid="3fddc213-73dc-49aa-8935-4bcfe50f06e7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="19"/>
+				</textElement>
+				<text><![CDATA[NCR Report ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-20" y="70" width="595" height="1" uuid="3d589c1f-9dd7-4288-8411-3ae77919c276"/>
+			</line>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="401" y="50" width="100" height="20" uuid="d5537a0f-0c19-4d5c-8c79-93bc9119580f"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="503" y="50" width="70" height="16" uuid="72829252-ec9f-4952-bdc2-bf82a0e67696"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="2" width="100" height="30" uuid="e722fa2f-58ca-4536-9bfc-dc0cf5120627"/>
+				<text><![CDATA[Employee Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="2" width="100" height="30" uuid="a97314c4-97a2-4ea9-96b0-1e2fe2f4e3d0"/>
+				<text><![CDATA[NCR No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="2" width="100" height="30" uuid="d41d2a67-a14f-47ee-bd76-cdf9257171b2"/>
+				<text><![CDATA[Police Station]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="2" width="100" height="30" uuid="a334781e-bd73-4b0d-9d4d-5b18ca59dee4"/>
+				<text><![CDATA[NCR Id]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="461" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="30" uuid="586f05a4-654d-43be-bc13-b3b6345be80e"/>
+				<textFieldExpression><![CDATA[$F{emp_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="230" y="0" width="100" height="30" uuid="3a6240a1-063f-4a89-ac91-15f6f447c4e4"/>
+				<textFieldExpression><![CDATA[$F{ncrno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="0" width="100" height="30" uuid="fac1d106-67c4-4d07-9919-70d73592c815"/>
+				<textFieldExpression><![CDATA[$F{policestation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="0" width="100" height="30" uuid="51cc0fe0-fa50-432d-a3db-92444f2d0ffe"/>
+				<textFieldExpression><![CDATA[$F{ncr_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="230" width="100" height="30" uuid="30a960fe-49c9-4b85-9529-fd91e52fd642"/>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="180" width="100" height="30" uuid="c5e8fbb0-043c-4dbd-89e8-78584affef5c"/>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="120" y="230" width="100" height="30" uuid="eeef6c48-e5d4-49f4-bf2b-251a4d395859"/>
+				<textFieldExpression><![CDATA[$F{time}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="120" y="180" width="100" height="30" uuid="ccf3d351-33b0-4a6d-aa20-3a2568eb7210"/>
+				<text><![CDATA[Time]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="100" width="100" height="30" uuid="b6cfd8a5-0723-49a6-8250-8105fdba3ef7"/>
+				<textFieldExpression><![CDATA[$F{acts}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="60" width="100" height="30" uuid="0eba556b-b6f2-4e1f-b2d6-2a1ccc5a7921"/>
+				<text><![CDATA[Acts]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="120" y="100" width="100" height="30" uuid="f76c5232-cdc8-4a76-83a2-ac8a18626412"/>
+				<textFieldExpression><![CDATA[$F{section}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="120" y="60" width="100" height="30" uuid="7cce180f-aeba-4264-98ea-61cfea8872eb"/>
+				<text><![CDATA[Section]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="150" width="170" height="30" uuid="3a9be8d9-4b8a-40f8-80b1-11b1d7664056"/>
+				<text><![CDATA[information Recieved At P.S. :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="270" width="187" height="30" uuid="8790cc4d-b5d7-4afb-8eeb-0f7082c7a5ef"/>
+				<text><![CDATA[Name & Residence of Complainant :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="310" width="187" height="30" uuid="e49df263-d40d-4d14-a7ab-a5e4143b57d2"/>
+				<textFieldExpression><![CDATA[$F{nameofcomplainant}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="270" y="270" width="160" height="30" uuid="9eb5be93-b9d8-4b8a-ab7c-6cee343376c1"/>
+				<text><![CDATA[Name & Full Address of Witness :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="270" y="310" width="160" height="30" uuid="d96dc3b2-83e1-4851-9a3e-db2957714f9a"/>
+				<textFieldExpression><![CDATA[$F{nameofwitness}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="360" width="100" height="30" uuid="fcea6fda-8663-4150-8f62-9793377a1cfc"/>
+				<text><![CDATA[Complaint in Brief :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="400" width="100" height="30" uuid="93509734-1fe6-4cea-9784-5322a7806899"/>
+				<textFieldExpression><![CDATA[$F{complaint}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-20" y="460" width="595" height="1" uuid="d6b8b227-2177-4573-9243-191a96db8888"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="60" splitType="Stretch">
+			<textField>
+				<reportElement x="500" y="25" width="70" height="30" uuid="3f4cc8de-5df6-467a-8cda-25bd0aa9e30f"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+</jasperReport>

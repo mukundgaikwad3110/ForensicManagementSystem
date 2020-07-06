@@ -1,0 +1,76 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="casereg.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+</head>
+<body>
+  <center>
+<h1>Register</h1>
+    <p>Please fill in this form to register case.</p>
+    <hr>
+    </center>
+<form action="action_page.php" style="width:50%">
+  <div class="container">
+    
+    <div class="centerform"></div>
+    <label for="cid" > Id <span class="required" >*</span></label>
+    <input type="text"  name="email" required>
+
+    <label for="cname">Complaint Name <span class="required">*</span></label>
+    <input type="text"name="Complaint Name" required>
+
+    <label for="victim">Victim Name </label>
+    <input type="text" name="Victim Name">
+
+    <label for="CType">Complaint Type :</label>
+
+    <input  type="radio"   id="CType" name="CType" value="Cognizable">
+    <label>Congnizable</label>
+                        
+    <input  type="radio" id="CType" name="CType" value="Congnizable" ><label>non-Congnizable</label><br><br>
+
+    <!-- dsgfd 
+<label for= "cdate"> Complaint date:<span class="required">*</span>
+    </label>  
+    <input  type="date" required "><hr>
+
+  -->
+      <label for="cdate">Complaint date:<span class="required">*</span></label>
+    <input type="date" required><br><br>
+      <label for="crimespot">Crime Spot<span class="required">*</span></label><br><br>
+      <div class="comment">
+            <textarea class="textinput"></textarea>
+        </div>
+<hr>
+      <label for="cgender">Gender <span class="required">*</span></label>
+      <input  type="radio" id="gender" name="gender" value="male" checked><label>Male</label>
+      <input  type="radio" id="gender" name="gender" value="female" ><label>Female</label> 
+      <input  type="radio" id="gender" name="gender" value="other" ><label>Other</label> <br><br>
+
+      <label for="mobile number">Mobile Number<span class="required">*</span></label>  
+      <input type="mobile" name="number" maxlength="10"  required/>
+
+      <label for="Description">Description<span class="required">*</span></label><br><br>
+      <div class="comment">
+            <textarea class="textinput"></textarea><br><br>
+        </div>
+<hr>
+      <label for="proof">Proof Details<span class="required">*</span></label><br><br>
+      <div class="comment">
+            <textarea class="textinput"></textarea><br><br>
+        </div>
+      <hr>
+      <button type="submit" class="button registerbtn">Register</button>
+      <button type="submit" class="button cancelbtn">Cancel</button>
+
+  </div>
+
+  <div class="container signin">
+   
+  </div>
+  </div>
+</form>
+
+</body>
+</html>

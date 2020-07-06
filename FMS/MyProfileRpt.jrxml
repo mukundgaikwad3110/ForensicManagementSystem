@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ProfielRpt" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="72a33a08-fccc-47cd-9a5b-9cfc70a85b13">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (7)"/>
+	<queryString language="SQL">
+		<![CDATA[select * from permanent_emp]]>
+	</queryString>
+	<field name="emp_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="emp_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="permanent_emp"/>
+	</field>
+	<field name="f_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="f_name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="permanent_emp"/>
+	</field>
+	<field name="m_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="m_name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="permanent_emp"/>
+	</field>
+	<field name="l_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="l_name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="permanent_emp"/>
+	</field>
+	<field name="image" class="java.awt.Image">
+		<property name="com.jaspersoft.studio.field.label" value="image"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="permanent_emp"/>
+	</field>
+	<field name="address" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="address"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="permanent_emp"/>
+	</field>
+	<field name="gender" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="gender"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="permanent_emp"/>
+	</field>
+	<field name="m_status" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="m_status"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="permanent_emp"/>
+	</field>
+	<field name="m_number" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="m_number"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="permanent_emp"/>
+	</field>
+	<field name="email" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="email"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="permanent_emp"/>
+	</field>
+	<field name="dob" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.label" value="dob"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="permanent_emp"/>
+	</field>
+	<field name="age" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="age"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="permanent_emp"/>
+	</field>
+	<field name="qualification" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="qualification"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="permanent_emp"/>
+	</field>
+	<field name="specialization" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="specialization"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="permanent_emp"/>
+	</field>
+	<field name="designation" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="designation"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="permanent_emp"/>
+	</field>
+	<field name="department" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="department"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="permanent_emp"/>
+	</field>
+	<field name="adhar_num" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="adhar_num"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="permanent_emp"/>
+	</field>
+	<field name="pan_num" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="pan_num"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="permanent_emp"/>
+	</field>
+	<field name="username" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="username"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="permanent_emp"/>
+	</field>
+	<field name="password" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="password"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="permanent_emp"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="230" y="20" width="100" height="30" uuid="131ba965-ae08-4cd7-a3a2-9038acf4ad3b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[My Profile]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="585" splitType="Stretch">
+			<textField>
+				<reportElement x="157" y="0" width="70" height="30" uuid="cec7fe2a-ee31-40fa-811e-d18cd062b990">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e8ba3248-38b9-421a-8c7e-602528bb00a5"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{m_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="234" y="0" width="82" height="30" uuid="4a942e9a-64d2-440d-97e8-f163effd9d54">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f390fd5a-fc2c-46bf-9019-69aa3cb1a373"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{l_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="83" y="0" width="70" height="30" uuid="fc2989a1-4f04-478d-9d91-f768e2e412ad">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="47f63815-a01c-4d36-a3b2-3997d1e4a803"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{f_name}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="400" y="0" width="120" height="110" uuid="aec8f9a5-3b73-4d01-8301-db096b5179fd"/>
+				<imageExpression><![CDATA[$F{image}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="80" y="50" width="100" height="30" uuid="5dbb92e1-5dfd-44ad-8a7d-a5308741edc8"/>
+				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="110" width="100" height="30" uuid="4988a8d3-63df-4767-a4a3-de79d2701722"/>
+				<textFieldExpression><![CDATA[$F{gender}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="110" width="100" height="30" uuid="ad903002-d711-4530-8f79-cedf4a29ef4d"/>
+				<textFieldExpression><![CDATA[$F{m_status}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="82" y="150" width="100" height="30" uuid="c2b1847b-456a-43a3-bd2f-460e79b7c6e4"/>
+				<textFieldExpression><![CDATA[$F{m_number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="150" width="160" height="30" uuid="ef2d4e0c-61de-4200-8dbb-61ac62aaae08"/>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="200" width="100" height="30" uuid="fde12fce-0484-4c35-a2e8-f2fa48a09f89"/>
+				<textFieldExpression><![CDATA[$F{dob}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="200" width="100" height="30" uuid="205569bc-e418-46aa-807c-2131da311ee9"/>
+				<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="250" width="100" height="30" uuid="93e7bee9-ec2e-48ec-a330-ac232efe039e"/>
+				<textFieldExpression><![CDATA[$F{qualification}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="282" y="250" width="100" height="30" uuid="08447aef-b185-4129-88ae-cf26bc03b430"/>
+				<textFieldExpression><![CDATA[$F{specialization}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="290" width="100" height="30" uuid="be96cb08-decd-40ac-98fd-94a10dc1650f"/>
+				<textFieldExpression><![CDATA[$F{designation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="290" width="100" height="30" uuid="b3a8cbe8-f684-42fd-840c-3692a659b1a3"/>
+				<textFieldExpression><![CDATA[$F{department}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="330" width="100" height="30" uuid="9f095c72-a643-4155-8876-98e686dfd590"/>
+				<textFieldExpression><![CDATA[$F{adhar_num}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="330" width="100" height="30" uuid="b3e23fd8-f545-4c74-b4c6-d8cb2f8b790e"/>
+				<textFieldExpression><![CDATA[$F{pan_num}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="79" y="370" width="158" height="30" uuid="589575dd-f4fb-41b9-bd2b-d016cd9e1c45"/>
+				<textFieldExpression><![CDATA[$F{username}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="410" width="100" height="30" uuid="50f4e40a-127d-4d8f-b240-ee82913e6ebb"/>
+				<textFieldExpression><![CDATA[$F{password}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-15" y="0" width="73" height="26" uuid="5dbf660a-efea-4cf1-9501-06e9232202c8"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name:-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-4" y="50" width="63" height="30" uuid="acccd4e1-4bf1-4a78-9cd1-9cf30634f2c6"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Address:-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-7" y="110" width="63" height="30" uuid="91299afe-0206-48c3-be3c-a9a1cde0720f"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gender:-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="182" y="150" width="63" height="30" uuid="5f1901ca-c410-412d-af99-a732af8ba48c"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[E-Mail:-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="188" y="110" width="90" height="30" uuid="98693526-ad3f-49df-9e2e-56f1e46ba0ed"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Marrital Status:-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-1" y="150" width="63" height="30" uuid="10de01e7-0123-4a11-90b4-979640512dd9"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Mobile No.:-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-3" y="250" width="80" height="30" uuid="ff6dfbaa-e49f-4215-bcf7-0322a2923214"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Qualification:-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="181" y="250" width="100" height="30" uuid="3bc6f6f9-f4f6-4c72-8157-904729cac741"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Specialization:-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="290" width="69" height="30" uuid="65f7bd66-bbe2-49e4-9996-cfe72a4d87d3"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Designation:-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-17" y="200" width="71" height="20" uuid="a8e96884-a849-4b8b-9272-417cb67f4a9e"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[DOB:-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="179" y="200" width="58" height="30" uuid="95616d7f-69a4-48a9-966e-806276ec1e04"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Age:-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="175" y="290" width="100" height="30" uuid="ee7604ff-4f35-4e96-9cfc-f6a99d02ac6a"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Department:-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-13" y="330" width="89" height="30" uuid="db0d4e19-ec41-4564-b73c-0619b082c63e"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Aadhar No:-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="182" y="330" width="70" height="30" uuid="43220264-1e06-487f-8616-1dcc35a41925"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[PAN No:-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="372" width="63" height="30" uuid="dbdbbacd-9f07-4d25-9d2a-af18cbc7d305"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Username:-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-7" y="410" width="70" height="30" uuid="f5dffb7c-0e10-481b-9cd0-82e87e0b0358"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Password:-]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-17" y="450" width="591" height="1" uuid="68c90037-0094-4886-a04a-a13e9044d1b1"/>
+			</line>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="64" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="51" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="NCRRpt" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="587e8a21-ace1-4ea3-a22f-e8db22230403">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (8)"/>
+	<queryString language="SQL">
+		<![CDATA[select * from bloodtest]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bloodtest"/>
+	</field>
+	<field name="ncrno" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="ncrno"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bloodtest"/>
+	</field>
+	<field name="emp_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="emp_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bloodtest"/>
+	</field>
+	<field name="coldate" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.label" value="coldate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bloodtest"/>
+	</field>
+	<field name="labname" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="labname"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bloodtest"/>
+	</field>
+	<field name="drname" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="drname"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bloodtest"/>
+	</field>
+	<field name="patientname" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="patientname"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bloodtest"/>
+	</field>
+	<field name="gender" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="gender"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bloodtest"/>
+	</field>
+	<field name="bg" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="bg"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bloodtest"/>
+	</field>
+	<field name="wbc" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="wbc"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bloodtest"/>
+	</field>
+	<field name="rbc" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="rbc"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bloodtest"/>
+	</field>
+	<field name="hb" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="hb"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bloodtest"/>
+	</field>
+	<field name="glucose" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="glucose"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bloodtest"/>
+	</field>
+	<field name="pc" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="pc"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bloodtest"/>
+	</field>
+	<field name="bun" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="bun"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bloodtest"/>
+	</field>
+	<field name="creatine" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="creatine"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bloodtest"/>
+	</field>
+	<field name="sodium" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="sodium"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bloodtest"/>
+	</field>
+	<field name="cd" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="cd"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bloodtest"/>
+	</field>
+	<field name="alcpercentage" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="alcpercentage"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bloodtest"/>
+	</field>
+	<field name="alctype" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="alctype"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bloodtest"/>
+	</field>
+	<field name="drugpercentage" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="drugpercentage"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bloodtest"/>
+	</field>
+	<field name="drugtype" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="drugtype"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bloodtest"/>
+	</field>
+	<field name="poisonpercentage" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="poisonpercentage"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bloodtest"/>
+	</field>
+	<field name="poisontype" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="poisontype"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bloodtest"/>
+	</field>
+	<group name="id">
+		<groupExpression><![CDATA[$F{id}]]></groupExpression>
+	</group>
+	<group name="ncrno">
+		<groupExpression><![CDATA[$F{ncrno}]]></groupExpression>
+	</group>
+	<group name="emp_id">
+		<groupExpression><![CDATA[$F{emp_id}]]></groupExpression>
+	</group>
+	<group name="coldate">
+		<groupExpression><![CDATA[$F{coldate}]]></groupExpression>
+	</group>
+	<group name="labname">
+		<groupExpression><![CDATA[$F{labname}]]></groupExpression>
+	</group>
+	<group name="drname">
+		<groupExpression><![CDATA[$F{drname}]]></groupExpression>
+	</group>
+	<group name="patientname">
+		<groupExpression><![CDATA[$F{patientname}]]></groupExpression>
+	</group>
+	<group name="gender">
+		<groupExpression><![CDATA[$F{gender}]]></groupExpression>
+	</group>
+	<group name="bg">
+		<groupExpression><![CDATA[$F{bg}]]></groupExpression>
+	</group>
+	<group name="wbc">
+		<groupExpression><![CDATA[$F{wbc}]]></groupExpression>
+	</group>
+	<group name="rbc">
+		<groupExpression><![CDATA[$F{rbc}]]></groupExpression>
+	</group>
+	<group name="hb">
+		<groupExpression><![CDATA[$F{hb}]]></groupExpression>
+	</group>
+	<group name="glucose">
+		<groupExpression><![CDATA[$F{glucose}]]></groupExpression>
+	</group>
+	<group name="pc">
+		<groupExpression><![CDATA[$F{pc}]]></groupExpression>
+	</group>
+	<group name="bun">
+		<groupExpression><![CDATA[$F{bun}]]></groupExpression>
+	</group>
+	<group name="creatine">
+		<groupExpression><![CDATA[$F{creatine}]]></groupExpression>
+	</group>
+	<group name="sodium">
+		<groupExpression><![CDATA[$F{sodium}]]></groupExpression>
+	</group>
+	<group name="cd">
+		<groupExpression><![CDATA[$F{cd}]]></groupExpression>
+	</group>
+	<group name="alcpercentage">
+		<groupExpression><![CDATA[$F{alcpercentage}]]></groupExpression>
+	</group>
+	<group name="alctype">
+		<groupExpression><![CDATA[$F{alctype}]]></groupExpression>
+	</group>
+	<group name="drugpercentage">
+		<groupExpression><![CDATA[$F{drugpercentage}]]></groupExpression>
+	</group>
+	<group name="drugtype">
+		<groupExpression><![CDATA[$F{drugtype}]]></groupExpression>
+	</group>
+	<group name="poisonpercentage">
+		<groupExpression><![CDATA[$F{poisonpercentage}]]></groupExpression>
+	</group>
+	<group name="poisontype">
+		<groupExpression><![CDATA[$F{poisontype}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="90" splitType="Stretch">
+			<staticText>
+				<reportElement x="220" y="20" width="160" height="30" forecolor="#FA2019" uuid="a6f6f196-1dd5-4cd4-85fe-fd23894a6862"/>
+				<textElement>
+					<font fontName="Times New Roman" size="19"/>
+				</textElement>
+				<text><![CDATA[Blood Test Report]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="450" y="50" width="60" height="20" uuid="78fe20b3-8006-48a1-b18e-23cf8b7851da"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="390" y="50" width="60" height="20" uuid="85665e94-dada-4a12-ab57-b9890b11fe5c"/>
+				<text><![CDATA[Print Date :-]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-14" y="78" width="586" height="1" forecolor="#FA170F" uuid="664c2bbb-3ce2-4883-b6ae-c370f49a36d7"/>
+			</line>
+			<textField pattern="HH:mm">
+				<reportElement x="520" y="50" width="48" height="30" uuid="b6eb8acc-3458-4d51-85a0-8e753e957229"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="80" height="30" uuid="e7348490-292c-44f4-ac3f-dd78ff82e81a"/>
+				<text><![CDATA[Collection Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="0" width="70" height="30" uuid="84ab50c2-5ff0-44af-9f8b-e5dc9ddc5fe4"/>
+				<text><![CDATA[Lab Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="0" width="60" height="30" uuid="c8547ca6-d82c-48c2-8cf0-2b5c56517fd9"/>
+				<text><![CDATA[Dr. Name]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="90" y="0" width="80" height="30" uuid="953c40fb-5518-47bc-b35b-851b971186f9"/>
+				<textFieldExpression><![CDATA[$F{coldate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="0" width="90" height="30" uuid="a49122c4-ee40-4de7-8cdc-a1f1ccf5ef50"/>
+				<textFieldExpression><![CDATA[$F{labname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="443" y="0" width="100" height="30" uuid="2684ca50-524e-4da3-a158-701e05675af0"/>
+				<textFieldExpression><![CDATA[$F{drname}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="390" splitType="Stretch">
+			<textField>
+				<reportElement x="90" y="10" width="80" height="30" uuid="08b136a8-271c-4281-b5b5-21710248d334"/>
+				<textFieldExpression><![CDATA[$F{patientname}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="10" width="80" height="30" uuid="d67f043d-166e-4958-ac47-fe1ead0ceb73"/>
+				<text><![CDATA[Patioent Name]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="260" y="10" width="90" height="30" uuid="ffccc22e-090c-4057-8539-3c7d4f721a7d"/>
+				<textFieldExpression><![CDATA[$F{gender}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="180" y="10" width="70" height="30" uuid="8d44e6c3-cc6f-4f2a-87bc-c988db4d2c8b"/>
+				<text><![CDATA[Gender]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="90" y="70" width="80" height="30" uuid="1cbfe48e-ef4c-4ce8-838f-31501a598a89"/>
+				<textFieldExpression><![CDATA[$F{bg}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="70" width="80" height="30" uuid="71d64b02-9943-4129-83fe-7efba6ca1f0d"/>
+				<text><![CDATA[Blood Group :-]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="260" y="70" width="90" height="30" uuid="e719ad42-5f0a-490a-a809-81ca8dd1e9e9"/>
+				<textFieldExpression><![CDATA[$F{wbc}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="180" y="70" width="70" height="30" uuid="9afc5ae9-1132-4583-afe0-67952d8a593e"/>
+				<text><![CDATA[WBC :-]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="445" y="70" width="100" height="30" uuid="c4117c9d-6a75-4fb4-a435-a8ed7d2e505c"/>
+				<textFieldExpression><![CDATA[$F{rbc}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="370" y="70" width="60" height="30" uuid="01d60160-8150-4ed7-86bc-5d0338ed0b56"/>
+				<text><![CDATA[RBC :- ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="90" y="120" width="80" height="30" uuid="5ac69b75-a8db-45a5-a245-b049f8e1ff37"/>
+				<textFieldExpression><![CDATA[$F{hb}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="120" width="80" height="30" uuid="c6d96208-f6f0-49cb-84ff-043263ec3db2"/>
+				<text><![CDATA[Hemoglobin :-]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="260" y="120" width="90" height="30" uuid="7ee22963-68d7-4b03-9120-a9a3134fe3d7"/>
+				<textFieldExpression><![CDATA[$F{glucose}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="180" y="120" width="70" height="30" uuid="0a3afdc0-8d34-434a-8b90-008f9afc5978"/>
+				<text><![CDATA[Glucose :-]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="445" y="120" width="100" height="30" uuid="63a82bab-dc06-4048-a3bd-d65d77985708"/>
+				<textFieldExpression><![CDATA[$F{pc}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="370" y="120" width="60" height="30" uuid="9958797a-ab44-4146-afe9-f55b6883eef2"/>
+				<text><![CDATA[Platelates Count :-]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="90" y="170" width="80" height="30" uuid="a8d616e7-6e2c-41d4-abda-3c9055783943"/>
+				<textFieldExpression><![CDATA[$F{bun}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="170" width="80" height="30" uuid="e0c9331e-a049-42fb-b1ee-15bb0249480d"/>
+				<text><![CDATA[BUN :-]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="260" y="170" width="90" height="30" uuid="c747bf7b-9df9-4be9-83a0-0ed97f6c59a1"/>
+				<textFieldExpression><![CDATA[$F{creatine}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="180" y="170" width="70" height="30" uuid="7506b96d-7543-4ba7-87cd-4f23349aadaf"/>
+				<text><![CDATA[Creatine :- ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="445" y="170" width="100" height="30" uuid="b07b7fa5-1396-4c48-8ac3-c79fb612187b"/>
+				<textFieldExpression><![CDATA[$F{sodium}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="370" y="170" width="60" height="30" uuid="2a4eec60-7c27-4053-8509-f74ff121a77a"/>
+				<text><![CDATA[Sodium :- ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="90" y="220" width="80" height="30" uuid="d9401288-78ac-4e01-b4aa-c5ddba94191f"/>
+				<textFieldExpression><![CDATA[$F{cd}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="220" width="80" height="30" uuid="c3d97a31-a313-4e8b-98c7-78cb1d1e5098"/>
+				<text><![CDATA[Carbon Dioxide :-]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="260" y="220" width="90" height="30" uuid="4501b4c7-25f3-4410-8089-0ce97d0de84d"/>
+				<textFieldExpression><![CDATA[$F{alcpercentage}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="180" y="220" width="70" height="30" uuid="584a9d13-6222-40de-b41d-7a2a4be52fe7"/>
+				<text><![CDATA[Alcohol Percentage :-]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="445" y="220" width="100" height="30" uuid="8b1676ab-4131-4fd2-baca-c88b6333bc27"/>
+				<textFieldExpression><![CDATA[$F{alctype}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="370" y="220" width="73" height="30" uuid="d2f2caac-42e7-41dc-b8dd-f9b7112e7e63"/>
+				<text><![CDATA[Alcohol Type :-]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="90" y="270" width="80" height="30" uuid="03df83fc-1c35-4dd7-852c-fa4aae1740f0"/>
+				<textFieldExpression><![CDATA[$F{drugpercentage}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="270" width="80" height="30" uuid="579a01a8-5de3-4b9e-9a93-4082ec722af7"/>
+				<text><![CDATA[Drugs Percentage :- ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="260" y="270" width="90" height="30" uuid="40d1c54d-72dd-437c-9e40-0626fb3e137e"/>
+				<textFieldExpression><![CDATA[$F{drugtype}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="180" y="270" width="70" height="30" uuid="a5f9b4e7-1524-4d6b-bd5c-3ef601808c27"/>
+				<text><![CDATA[Drug Type :-]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="90" y="320" width="80" height="30" uuid="07a121dc-f9a5-495d-aa9f-f626af0297bf"/>
+				<textFieldExpression><![CDATA[$F{poisonpercentage}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="320" width="80" height="30" uuid="b09571e2-6d7f-4981-aeae-e3f5274d36bc"/>
+				<text><![CDATA[Poison Percentage :-]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="260" y="320" width="100" height="30" uuid="2d01dc9e-6ae0-412f-a579-81aa63c6fe49"/>
+				<textFieldExpression><![CDATA[$F{poisontype}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="180" y="320" width="70" height="30" uuid="5b5bf3ef-0d3b-4064-92f6-eadf190ada26"/>
+				<text><![CDATA[Poison Type :- ]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="57" splitType="Stretch">
+			<textField>
+				<reportElement x="510" y="27" width="44" height="30" uuid="a1204bc7-0e19-4843-a19f-5da46d1e1ae1"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+</jasperReport>

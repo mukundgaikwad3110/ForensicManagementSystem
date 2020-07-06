@@ -1,0 +1,14 @@
+function mySections(){var d=$("div.sectxt"),h=d.prev(),a=$("h2 a");a.click(function(event){event.preventDefault();});if(d){h.click(function(){var ah=$(this),ad=ah.next();d.not(ad).slideUp();h.not(ah).removeClass("subOpen").addClass("subClose");myToggle(ah,ad);myScroll('h2.subOpen',1000);var hl=ah.children('a')[0];if(hl){history.replaceState('','','#'+hl.name);}});}}
+function myToggle(h,e){h.toggleClass("subClose subOpen");e.fadeToggle(1000);}
+function myScroll(s,t){setTimeout(function(){var pos=$(s).offset();if(pos){$("html,body").animate({scrollTop:pos.top},1000);}},t);}
+function myHash(){var an=document.location.hash.substr(1);if(an){var ha=$('a[name="'+an+'"]'),hh=ha.parent(),hd=hh.next();myToggle(hh,hd);myScroll('h2.subOpen',1000);}}
+function myShareAnim(){setTimeout(function(){$('#share').animate({'right':'-48px'},1000).animate({'right':'0'},1000);},5000)}
+function myFocus(e){el=$(e);if(el){el.focus();}}
+function myCounter(t){$('#counter').load('/includes/inc.online.php?ts='+t);}
+function myJSLoad(a){var d=document;for(var i=0;i<a.length;i++){if(d.getElementById(a[i][1])===null){var s=d.createElement('script');s.async;s.src=a[i][0];s.id=a[i][1];d.getElementsByTagName('head')[0].appendChild(s);}}}
+function myCSSLoad(c){var d=document;for(var i=0;i<c.length;c++){l=d.createElement('link');l.rel='stylesheet';l.href=c[i];d.getElementsByTagName('head')[0].appendChild(l);}}
+function notifyuser(m='',h='Notification',c='warnbg',f=false){var t,nt=$('#notification'),nm=nt.find('.notification');nm.attr('class','notification '+c).click(function(){nt.fadeOut(1000);return(true);}).html('<div class="notifhead">'+h+'</div><div class="notifbody">'+m+'</div><div class="notifbtns">OKAY</div>');nt.fadeIn(1000,function(){if(f){t=setTimeout(function(){nt.fadeOut(1000);},5000);}});}
+function notify(m='Problem!',c='warnbg',f=false){var t,m='<div>'+m+'</div>',nt=$('#message');nt.html(m);nt.addClass(c);nt.click(function(){nt.fadeOut(600);return(true);});nt.fadeIn(600,function(){if(!f){t=setTimeout(function(){nt.fadeOut(600).promise().done(function(){});},5000);}else{showtip(stop);}});}
+var showtip_t;function showtip(s){if(s!==undefined){clearTimeout(showtip_t);return true;}
+var tips=['<a href="https://paytm.com/helpinghand/kerala-cm-s-distress-relief-fund">Kerala CM&apos;s Distress Relief Fund</a>','<a href="/contact.php">Click here to Leave a Comment!</a>','Click Flag to use Google Translate','All Sections Lists are at the bottom of the page!','&larr;Prev &amp; Next&rarr; Links show on connected pages!','You can &larr; S W I P E &rarr; on connected pages!','Best viewed on Chrome / Firefox / Safari!',];if(window.pagetips)for(var i=0;i<pagetips.length;i++)tips.unshift(pagetips[i]);var i=Math.floor(Math.random()*(tips.length-1));notify(tips[i],'sch passbg shadowed blocklinks');showtip_t=setTimeout(showtip,7000);}
+$(document).ready(function(){mySections();myHash();myShareAnim();myJSLoad(a);myCSSLoad(c);showtip();});
